@@ -8,7 +8,26 @@ This markdown file is the framework to demonstrate the research process of a fun
 ### Performance of Single Commodity
 1. Copper
 
-3. Aluminium
-4. Zin
-5. Nickle
-6. portfolio
+![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/CU_category.png)
+
+2. Aluminium
+
+![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/AL_category.png)
+
+3. Zinc
+
+![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/ZN_category.png)
+
+4. Nickle
+
+![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/NI_category.png)
+
+5. portfolio
+- before target volatility strategy
+
+![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/options_nav.png)
+
+- after target volatility strategy
+
+![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/after_tvs_5pct.jpg)
+
