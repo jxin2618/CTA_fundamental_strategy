@@ -1,0 +1,1 @@
+# CTA_fundamental_strategy
