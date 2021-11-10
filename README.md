@@ -22,12 +22,19 @@ This markdown file is the framework to demonstrate the research process of a fun
 
 ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/NI_category.png)
 
-5. portfolio
-- before target volatility strategy
+### Performance of Portfolio
+- performance of each commodity: before target volatility strategy
 
 ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/options_nav.png)
 
-- after target volatility strategy
+- performance of each commodity: after target volatility strategy
 
-![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/after_tvs_5pct.jpg)
+![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/options_nav_after_tvs_0.05.png)
 
+- performance of strategy
+
+![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/after_tvs_5pct.png)
+
+- Seasonality of the portfolio
+
+![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/seasonal_effect_0.05.png)
