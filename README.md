@@ -44,12 +44,18 @@ The data source comes from a database merchant called Mysteel. We selected funda
 
 ### Step 3: Construct the Risk Model for the portfolio
 We used Target Volatility Strategy to tune weights on each commodity. The strategy works as follows:
-1. First consider Target Volatility for Single commodity. If we set a fixed target volatility for each commodity by leveraging, then the weight of i-th commodity would be <img src="http://chart.googleapis.com/chart?cht=tx&chl= w_{t+1}^i = \frac{\sigma_{tgt}}{N\sigma_t^i}" style="border:none;">
-2. Second consider the correlation among commodities. The volatility of the portfolio is <img src="http://chart.googleapis.com/chart?cht=tx&chl= \sigma_p = \sqrt{\sum_{i=1}^Nw_i^2\sigma_i^2 + 2\sum_{i=1}^{N}\sum_{j=i+1}^Nw_iw_j\sigma_i\sigma_j\rho_{ij}}" style="border:none;">
-
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+1. First consider Target Volatility for Single commodity. If we set a fixed target volatility for each commodity by leveraging, then the weight of i-th commodity would be $$ w_{t+1}^i = \frac{\sigma_{tgt}}{N\sigma_t^i}$$
+2. Second consider the correlation among commodities. The volatility of the portfolio is 
 $$\sigma_p = \sqrt{\sum_{i=1}^Nw_i^2\sigma_i^2 + 2\sum_{i=1}^{N}\sum_{j=i+1}^Nw_iw_j\sigma_i\sigma_j\rho_{ij}}$$
-
+3. If the weights of all commodities are adjusted to target volatility, the volatility of the portfolio is 
+$$ \sigma_P=\frac{\sigma_{tgt}}{N}\sqrt{N+2\sum_{i=1}^N\sum_{j=i+1}^N\rho_{ij}} $$
+4. The average of correlation is:
+$$ \bar{\rho}= \frac{2\sum^N_{i=1}\sum^N_{j=i+1}\rho_{ij}}{N(N-1)}$$
+5. The equation of volatility becomes:
+$$ \sigma_P = \sigma_{tgt}\sqrt{\frac{1+(N-1)\bar{\rho}}{N}} $$
+It shows that the diversification makes the volatility of portfolio lower than the volatility of single commodity.
+6. Adjust the target volatility of single commodity according to the correlation factors:
+$$ \sigma_{tgt} = \sigma_{P, tgt}\sqrt{\frac{N}{1+(N-1)\bar{\rho}}} =  \sigma_{P, tgt} \ times CF(\bar{\rho})$$
 
 
 <span id="3"></span>
