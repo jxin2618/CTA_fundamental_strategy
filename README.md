@@ -71,9 +71,21 @@ This section lists some interesting backtesting and analytical results of copper
 
 ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/cu_fundamental_data.png)
 
-### The 
-### Price
-### Inventory
+### Results
+- **Inventory**
+  - Exchanges' Warehouse Inventory
+ 
+  ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/CU_LME.png)![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/CU_SHFE.png)
+   
+  ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/cu_shfe_backtest.png)
+   
+  - Social Inventory
+  
+  ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/sh保税区.png)
+
+  ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/sh_free_trade_zone_backtest.png)
+  
+  
 ### Demand
 
 <span id="4"></span>
@@ -81,34 +93,71 @@ This section lists some interesting backtesting and analytical results of copper
 ### Performance of Single Commodity
 1. Copper
 
-![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/CU_category.png)
+ ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/CU_category.png)
+ 
+ The correlation between the styles of factors is as follows:
+
+|  | price | inventory|
+| ------ | ------ | ------ |
+| price| 1 | |
+| inventory | 0.236 | 1 |
+
 
 2. Aluminium
 
 ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/AL_category.png)
 
+The correlation among the styles of factors is as follows:
+
+|  | price | inventory| demand |
+| ------ | ------ | ------ | ------ |
+| price| 1 | | |
+| inventory | 0.254 | 1 | |
+| demand | 0.026 | 0.097 | 1 |
+
 3. Zinc
 
 ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/ZN_category.png)
+
+The correlation among the styles of factors is as follows:
+
+|  | price | inventory| demand |
+| ------ | ------ | ------ | ------ |
+| price| 1 | | |
+| inventory | -0.036 | 1 | |
+| demand | 0.181 | 0.032 | 1 |
 
 4. Nickle
 
 ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/NI_category.png)
 
+The correlation between the styles of factors is as follows:
+
+|  | price | inventory| 
+| ------ | ------ | ------ | 
+| price| 1 | | 
+| inventory | 0.010 | 1 | 
+
+
 <span id="5"></span>
 ## V. Risk Models
 ### Performance of Portfolio
-- performance of each commodity: before target volatility strategy
+- Performance of each commodity: before target volatility strategy
 
 ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/options_nav.png)
 
-- performance of each commodity: after target volatility strategy
+- Performance of each commodity: after target volatility strategy
 
 ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/options_nav_after_tvs_0.05.png)
 
-- performance of strategy
+- Performance of strategy
 
 ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/after_tvs_5pct.png)
+
+- Historical Performance
+
+![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/hist_performance.png)
+
 
 - Seasonality of the portfolio
 
