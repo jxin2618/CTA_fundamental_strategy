@@ -74,6 +74,8 @@ This section lists some interesting backtesting and analytical results of copper
 ### Results
 - **Inventory**
   - Exchanges' Warehouse Inventory
+    
+    The warehouse inventory of SHFE reflects the consumption of copper better than that of LME, due to the matter of financing lock. The inventory of SHFE also shows evident seasonality.
  
   ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/CU_LME.png)![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/CU_SHFE.png)
    
@@ -81,12 +83,37 @@ This section lists some interesting backtesting and analytical results of copper
    
   - Social Inventory
   
-  ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/sh保税区.png)
+    The social inventory of Shanghai free-trade-zone is a good monitor to see the imbalance between supply and demand due to imports and exports, because Shanghai free-trade-zone is the buffer between Shanghai and London. 
+  
+    When the losses of imports are huge, the copper accumulate in the warehouse. 
+  
+    When the import window is open, the copper flows into mainland market from the free-trade-zone. For example, The inventory of copper fell 220,000 tones in the second quanter, from 400,000 tones to 180,000 tones.
+  
+   ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/sh保税区.png)
 
-  ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/sh_free_trade_zone_backtest.png)
+    ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/sh_free_trade_zone_backtest.png)
+- **Price**  
+  - Basis Rate = (Spot price - Future price) / Spot price
   
+    ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/cubasis.png)
   
-### Demand
+  - Refining charges
+ 
+    Refining charges are the payments from mining merchants to the refineries. High refining charges means the abundant supply of the copper mine.
+    
+    Some factors of refing charges performs extraordinarily well in 2020. The copper miners went on strike for many times due to the pandemic. Hence the supply of copper mine was in extreme shortage and the refining charges was historically low in 2020. In this way, the subject of refining fees reflected copper's supply chain logic, which had an essential influence on the price of copper in 2020.
+ 
+    ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/curc_data.png)
+  
+    ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/tcrc_backtesting.png)
+   
+  - Import profit and loss
+    
+    The transaction premium of Yangshan copper reflects the premium to buy copper due to the supply and demand strucutre. Hence, high premium demonstrtes the situation that demand exceeds supply.
+    
+    In second quarter of 2020, the import window was open for most time. Strong import needs pulled up the premium and decrease the inventory in free-trade-zone rapidly. The inventory of copper fell 220,000 tones in the second quanter, from 400,000 tones to 180,000 tones.
+    
+    ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/洋山铜溢价.png)
 
 <span id="4"></span>
 ## IV. Return Models
@@ -165,5 +192,5 @@ The correlation between the styles of factors is as follows:
 
 <span id="6"></span>
 ## VI. Future Work
-1. Weighting method
-2. Crosssectionally
+1. Try other weight-tuning methods, such like spearman-IC value method of weighting.
+2. Explore effective factors by cross-sectional test among all the commoodities.
