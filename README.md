@@ -1,10 +1,30 @@
 # CTA_fundamental_strategy
 This markdown file is the framework to demonstrate the research process of a fundamental strategy in China commodities. It also shows part of the backtesting results in the metal sector, including copper, aluminium, zinc and nickle.
+## Overview of Data
+The data source comes from a database merchant called Mysteel. We selected fundamental data on daily and weekly frequency, which have more than five years historical data. The raw data can be classified in four kinds:
+- Price: including future prices, spot prices, cost of goods, profits of goods
+- Supply: including the productivity effenciency, supply quantity
+- Demand: including the trading volume
+- Inventory: including the social inventory and exchange‘s warehouse inventory
+
 ## Backtesting Philosophy
-### Step 1 
+### Step 1: Data
 ### Step 2 
 
 ## Backtesting Results
+This section list some interesting backtesting and analytical results of copper.
+### Overview of Copper's supply and demand**
+
+![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/cu产业链.png)
+
+### Overview of Copper's fundamental data**
+
+### The 
+### Price
+### Inventory
+### Demand
+
+## Return Models
 ### Performance of Single Commodity
 1. Copper
 
@@ -22,6 +42,7 @@ This markdown file is the framework to demonstrate the research process of a fun
 
 ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/NI_category.png)
 
+## Risk Models
 ### Performance of Portfolio
 - performance of each commodity: before target volatility strategy
 
@@ -38,3 +59,7 @@ This markdown file is the framework to demonstrate the research process of a fun
 - Seasonality of the portfolio
 
 ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/seasonal_effect_0.05.png)
+
+## Future Work
+1. Weighting method
+2. Crosssectionally
