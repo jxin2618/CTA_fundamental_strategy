@@ -8,16 +8,30 @@ The data source comes from a database merchant called Mysteel. We selected funda
 - Inventory: including the social inventory and exchange‘s warehouse inventory
 
 ## Backtesting Philosophy
-### Step 1: Data
-### Step 2 
+### Step 1: Data Preparation
+  - Check the data quality: 
+    - Detect the outliers
+    - Check the delay frequency of the historical data
+  - Data cleaning:
+    - Remove the outliers
+    - Trace the real publish time
+### Step 2: Construct the Return Models for each commodity
+- Construct Factors:
+
+![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/Fundamental_data_infrastructure.png)
+
+
+### Step 3: Construct the Risk Model for the portfolio
 
 ## Backtesting Results
-This section list some interesting backtesting and analytical results of copper.
-### Overview of Copper's supply and demand**
+This section lists some interesting backtesting and analytical results of copper.
+### Overview of Copper's supply and demand
 
 ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/cu产业链.png)
 
-### Overview of Copper's fundamental data**
+### Overview of Copper's fundamental data
+
+![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/cu_fundamental_data.png)
 
 ### The 
 ### Price
