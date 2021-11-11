@@ -1,15 +1,15 @@
 # CTA_fundamental_strategy
 This markdown file is the framework to demonstrate the research process of a fundamental strategy in China commodities. It also shows part of the backtesting results in the metal sector, including copper, aluminium, zinc and nickle.
 ## Table of Contents
-- [Overview of Data](#1)
-- [Backtesting Philosophy](#2)
-- [Backtesting Results](#3)
-- [Return Models](#4)
-- [Risk Models](#5)
-- [Future Work](#6)
+- [I. Overview of Data](#1)
+- [II. Backtesting Philosophy](#2)
+- [III. Backtesting Results](#3)
+- [IV. Return Models](#4)
+- [V. Risk Models](#5)
+- [VI. Future Work](#6)
 
 <span id="1"></span>
-## Overview of Data
+## I. Overview of Data
 The data source comes from a database merchant called Mysteel. We selected fundamental data on daily and weekly frequency, which have more than five years‘ historical data. The raw data can be classified in four kinds:
 - **Price**: including future prices, spot prices, cost of goods, profits of goods
 - **Supply**: including the productivity effenciency, supply quantity
@@ -17,7 +17,7 @@ The data source comes from a database merchant called Mysteel. We selected funda
 - **Inventory**: including the social inventory and exchange‘s warehouse inventory
 
 <span id="2"></span>
-## Backtesting Philosophy
+## II. Backtesting Philosophy
 ### Step 1: Data Preparation
   - **Check the data quality**: 
     - Detect the outliers
@@ -61,7 +61,7 @@ $$ w_{t+1}^i = \frac{\sigma_{P,tgt}}{N\sigma_t^i}\sqrt{\frac{N}{1+(N-1)\bar{\rho
 
 
 <span id="3"></span>
-## Backtesting Results
+## III. Backtesting Results
 This section lists some interesting backtesting and analytical results of copper.
 ### Overview of Copper's supply and demand
 
@@ -77,7 +77,7 @@ This section lists some interesting backtesting and analytical results of copper
 ### Demand
 
 <span id="4"></span>
-## Return Models
+## IV. Return Models
 ### Performance of Single Commodity
 1. Copper
 
@@ -96,7 +96,7 @@ This section lists some interesting backtesting and analytical results of copper
 ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/NI_category.png)
 
 <span id="5"></span>
-## Risk Models
+## V. Risk Models
 ### Performance of Portfolio
 - performance of each commodity: before target volatility strategy
 
@@ -115,6 +115,6 @@ This section lists some interesting backtesting and analytical results of copper
 ![image](https://github.com/jxin2618/CTA_fundamental_strategy/blob/main/figures/seasonal_effect_0.05.png)
 
 <span id="6"></span>
-## Future Work
+## VI. Future Work
 1. Weighting method
 2. Crosssectionally
